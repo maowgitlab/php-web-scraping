@@ -7,6 +7,8 @@ curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
 
+sleep(2);
+
 $response = curl_exec($ch);
 
 if(curl_errno($ch)) {
